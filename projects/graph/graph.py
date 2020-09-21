@@ -171,7 +171,7 @@ class Graph:
 
         # base case
         if new_path[-1] == destination_vertex:
-            return new_path        
+            return new_path
 
         for neighbor in self.get_neighbors(starting_vertex):
             if neighbor not in visited:
@@ -180,7 +180,7 @@ class Graph:
                 if neighbor_path:
                     return neighbor_path
 
-        
+
 
     # def dfs_recursive(self, starting_vertex, destination_vertex):
     #     """
